@@ -2,7 +2,7 @@ export default {
   cms_manual_init: true,
   backend: {
     name: 'github',
-    repo: 'jakeprins/nextjs-netlify-cms',
+    repo: 'darvese/erwandarves.com',
     branch: 'main',
   },
   media_folder: 'public/img',
