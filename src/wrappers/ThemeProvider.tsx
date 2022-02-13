@@ -25,23 +25,27 @@ const getUntoggledTheme = (theme: ThemeEnum) => {
   return theme === ThemeEnum.DARK ? ThemeEnum.LIGHT : ThemeEnum.DARK
 }
 
+const isBrowser = typeof window !== "undefined"
+
 export const ThemeProvider: React.FunctionComponent<IThemeProvider> = ({
   children,
 }) => {
   const [theme, setTheme] = useState(() => {
-    if (typeof window === "undefined") {
-      return undefined
+    if (isBrowser) {
+      const storedTheme = window.localStorage.getItem(STORAGE_KEY)
+      return (storedTheme as ThemeEnum) || ThemeEnum.DARK
     }
-    const storedTheme = window.localStorage.getItem(STORAGE_KEY)
-    return (storedTheme as ThemeEnum) || ThemeEnum.DARK
+    return ThemeEnum.DARK
   })
 
   const toggleTheme = () => setTheme(getUntoggledTheme(theme))
 
   useEffect(() => {
-    window.localStorage.setItem(STORAGE_KEY, theme)
-    document.documentElement.classList.add(theme)
-    document.documentElement.classList.remove(getUntoggledTheme(theme))
+    if (isBrowser) {
+      window.localStorage.setItem(STORAGE_KEY, theme)
+      document.documentElement.classList.add(theme)
+      document.documentElement.classList.remove(getUntoggledTheme(theme))
+    }
   }, [theme])
 
   return (
