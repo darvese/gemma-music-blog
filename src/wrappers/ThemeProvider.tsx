@@ -33,9 +33,9 @@ export const ThemeProvider: React.FunctionComponent<IThemeProvider> = ({
   const [theme, setTheme] = useState(() => {
     if (isBrowser) {
       const storedTheme = window.localStorage.getItem(STORAGE_KEY)
-      return (storedTheme as ThemeEnum) || ThemeEnum.DARK
+      return (storedTheme as ThemeEnum) || ThemeEnum.LIGHT
     }
-    return ThemeEnum.DARK
+    return ThemeEnum.LIGHT
   })
 
   const toggleTheme = () => setTheme(getUntoggledTheme(theme))

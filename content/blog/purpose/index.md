@@ -1,5 +1,5 @@
 ---
-title: Welcome to my blog
+title: What I want for music
 date: "2022-02-11"
 description: "As a person who has loved music their entire life but only started learning how to play it and make songs at the age of eighteen, the usual rituals for entering the world of music were not very suited to me. 
 "
@@ -15,9 +15,9 @@ I considered taking Music as a subject when I was at college; instead, I found m
 
 The tradition of making people audition for music courses or a place in a choir is not suited to the kind of person I am. It demands that people like me possess things they just don’t have. Prior education, or confidence and a desire to perform.
 
-#### My relationship with performance
+#### I have never wanted to perform
 
-**I have never wanted to perform.** I love music and I love to sing, but I have never wanted to perform.
+I love music and I love to sing, but I have never wanted to perform.
 
 Yet it seems there’s no – or very little – room in this world for a singer who doesn't want to sing publicly, or a musician who wants to play the piano and share that with others but isn’t comfortable playing in front of a large audience.
 
@@ -25,9 +25,9 @@ Being this way myself, I’ve found myself marginalised from the world of music 
 
 I wonder if this has happened to others. I wonder if it’s happening to someone right now.
 
-#### What I want for music
+#### Everyone should get to contribute to the conversation about music
 
-**Everyone should get to contribute to the conversation about music.** Everyone should be able to find a home in it if music is their home. This is kind of touching on the discussion about how introverts who have valuable ideas are too often not listened to. Perhaps this silencing of introverts is especially concentrated in music communities than it is in other communities. Because it seems incomprehensible to our society that music and the enjoyment of music could exist without performance.
+Everyone should be able to find a home in it if music is their home. This is kind of touching on the discussion about how introverts who have valuable ideas are too often not listened to. Perhaps this silencing of introverts is especially concentrated in music communities than it is in other communities. Because it seems incomprehensible to our society that music and the enjoyment of music could exist without performance.
 
 The odd thing is that I've never even seen or heard anyone talk about this anywhere, online or in the non-virtual world. Perhaps that’s why I’ve taken so long to do this.
 

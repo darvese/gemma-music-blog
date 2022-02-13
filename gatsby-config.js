@@ -4,7 +4,7 @@ module.exports = {
     author: {
       name: `Gem`,
       summary: `I am a music technical writer open to writing for your needs`,
-      //email: "gem-music@gmail.com",
+      email: "gem-music@gmail.com",
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
