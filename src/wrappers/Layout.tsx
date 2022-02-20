@@ -53,7 +53,7 @@ const Layout = ({ location, title, children }) => {
       <StyledHeader className="global-header">{header}</StyledHeader>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}, Gem Music Blog</footer>
+        <footer>© {new Date().getFullYear()}, Illanor Music Blog</footer>
       </div>
     </ThemeProvider>
   )
