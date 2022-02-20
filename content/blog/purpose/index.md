@@ -5,19 +5,15 @@ description: "As a person who has loved music their entire life but only started
 "
 ---
 
+![What I want for music](./oak-tree.webp)
+
 As a person who has loved music their entire life but only started learning how to play it and make songs at the age of eighteen, the usual rituals for entering the world of music were not very suited to me.
-
-I came from a family with parents who couldn’t have scraped together the money to buy me a musical education even if I had asked for one. To us, buying a TV or new computer was monumental. Buying an upright piano or even a good-quality digital one would have been ludicrous!
-
-And my parents were not musical themselves, so I never had one of those lucky discoveries of an old, neglected instrument in the attic once played by my mother or father when they were a kid.
-
-I considered taking Music as a subject when I was at college; instead, I found myself sitting Geography exams because the thought of performing for my exams was terrifying.
-
-The tradition of making people audition for music courses or a place in a choir is not suited to the kind of person I am. It demands that people like me possess things they just don’t have. Prior education, or confidence and a desire to perform.
 
 #### I have never wanted to perform
 
-I love music and I love to sing, but I have never wanted to perform.
+The tradition of making people audition to enrol on music courses or get a place in a choir is not suited to the kind of person I am. It demands that we possess things we might not have. If not prior education, then confidence and a desire to perform.
+
+Personally, while I love music and love to sing, I have never wanted to perform.
 
 Yet it seems there’s no – or very little – room in this world for a singer who doesn't want to sing publicly, or a musician who wants to play the piano and share that with others but isn’t comfortable playing in front of a large audience.
 
