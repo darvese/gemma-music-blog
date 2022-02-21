@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `The gem music`,
+    title: `Illanor music`,
     author: {
-      name: `Gem`,
-      summary: `I am a music technical writer open to writing for your needs`,
-      email: "gem-music@gmail.com",
+      name: `Illanor`,
+      summary: ``,
+      email: "illanor-music@gmail.com",
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://illanor-music.com/`,
     social: {
       twitter: `kylemathews`,
     },
@@ -44,7 +44,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 550,
+              linkImagesToOriginal: false,
             },
           },
           {
