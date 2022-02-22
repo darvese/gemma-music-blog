@@ -5,8 +5,6 @@ description: "As a person who has loved music their entire life but only started
 "
 ---
 
-![What I want for music](./oak-tree.webp)
-
 As a person who has loved music their entire life but only started learning how to play it and make songs at the age of eighteen, the usual rituals for entering the world of music were not very suited to me.
 
 #### I have never wanted to perform
@@ -21,7 +19,7 @@ Being this way myself, I’ve found myself marginalised from the world of music 
 
 I wonder if this has happened to others. I wonder if it’s happening to someone right now.
 
-#### Everyone should get to contribute to the conversation about music
+#### everyone should get to contribute to the conversation about music
 
 Everyone should be able to find a home in it if music is their home. This is kind of touching on the discussion about how introverts who have valuable ideas are too often not listened to. Perhaps this silencing of introverts is especially concentrated in music communities than it is in other communities. Because it seems incomprehensible to our society that music and the enjoyment of music could exist without performance.
 

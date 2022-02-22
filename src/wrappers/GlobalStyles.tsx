@@ -125,7 +125,6 @@ cursor: pointer;
     content: "";
     /* show by default */
   }
-  text-transform: lowercase;
 
   &:before {
     transform-origin: 100% 50%;

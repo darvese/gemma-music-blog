@@ -68,11 +68,10 @@ const Bio = ({ subject }) => {
         </Link>
         {"!"}
         <br />
-        Or you can simply let me know you liked it by clicking the music note
-        <br />
-        <MusicContainer className="animationless">
-          <FontAwesomeIcon icon={faMusic} />
-        </MusicContainer>
+        Or you can follow me on my Instagram account{" "}
+        <Link href={``} className="it">
+          @illanor-music
+        </Link>
       </p>
     </>
   )

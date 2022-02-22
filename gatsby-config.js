@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `The gem music`,
+    title: `Illanor music`,
     author: {
-      name: `Gem`,
+      name: `Illanor`,
       summary: `I am a music technical writer open to writing for your needs`,
-      email: "gem-music@gmail.com",
+      email: "illanor-music@gmail.com",
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: ``,
+    siteUrl: `https://illanor-music.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: ``,
     },
   },
   plugins: [
@@ -35,6 +35,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /static/,
+        },
       },
     },
     {
@@ -123,15 +131,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Illanor Music Blog`,
+        short_name: `Illanor`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/logo.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
