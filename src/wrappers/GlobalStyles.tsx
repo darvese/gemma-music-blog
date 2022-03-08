@@ -126,15 +126,30 @@ cursor: pointer;
     /* show by default */
   }
 
-  &:before {
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 0.3s;
+  &.inverted{
+    &:before {
+      transform-origin: 0% 50%;
+      transform: scale3d(1, 1, 1);
+      transition: transform 0.3s;
+    }
+
+    &:hover:before {
+      transform-origin: 100% 50%;
+      transform: scale3d(0, 1, 1);
+    }
   }
 
-  &:hover:before {
-    transform-origin: 0% 50%;
-    transform: scale3d(1, 1, 1);
+  &:not(.inverted) {
+    &:before {
+      transform-origin: 100% 50%;
+      transform: scale3d(0, 1, 1);
+      transition: transform 0.3s;
+    }
+
+    &:hover:before {
+      transform-origin: 0% 50%;
+      transform: scale3d(1, 1, 1);
+    }
   }
 }
 `

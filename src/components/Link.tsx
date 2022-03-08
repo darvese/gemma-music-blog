@@ -9,11 +9,13 @@ interface ILinkProps {
   itemProp?: string
   rel?: string
   className?: string
+  inverted?: boolean
 }
 
 const Link: React.FC<ILinkProps> = ({
   href,
   onClick,
+  inverted,
   to,
   itemProp,
   rel,
@@ -22,13 +24,22 @@ const Link: React.FC<ILinkProps> = ({
 }) => {
   if (to) {
     return (
-      <GLink className={className} to={to} itemProp={itemProp} rel={rel}>
+      <GLink
+        className={className + (inverted ? "inverted" : "")}
+        to={to}
+        itemProp={itemProp}
+        rel={rel}
+      >
         {children}
       </GLink>
     )
   }
   return (
-    <a href={href} onClick={onClick} className={className}>
+    <a
+      href={href}
+      onClick={onClick}
+      className={className + (inverted ? "inverted" : "")}
+    >
       {children}
     </a>
   )

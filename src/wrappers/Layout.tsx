@@ -28,7 +28,7 @@ const StyledHeader = styled.header`
   width: 100%;
   z-index: 9999;
   display: flex;
-  padding: 20px 150px 20px 150px;
+  padding: 20px 15% 20px 15%;
   display: flex;
   align-items: center;
 `
@@ -64,10 +64,7 @@ const Layout = ({ location, title, children }) => {
         <div style={{ width: "100%" }}></div>
         <ThemeButton />
       </StyledHeader>
-      <div className="global-wrapper" data-is-root-path={isRootPath}>
-        <main>{children}</main>
-        <footer>© {new Date().getFullYear()}, Illanor Music Blog</footer>
-      </div>
+      {children}
     </ThemeProvider>
   )
 }
