@@ -11,11 +11,10 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Intro = styled.div`
   margin-bottom: 0px;
-  padding: 50px;
-  padding-top: 150px;
+  padding: 15vh 10vw 5vh 10vw;
   display: flex;
   align-items: center;
-  background-color: #d1dce5;
+  background-color: #ffff;
   gap: 30px;
 `
 
@@ -24,7 +23,31 @@ const IntroTitle = styled.div`
 `
 
 const ArticlesContainer = styled.div`
-  padding: 50px;
+  background-color: #d1dce5;
+`
+
+const ArticlesWrapper = styled.div`
+  padding: 0vh 10vw 5vh 10vw;
+`
+
+const Separator = styled.div`
+  position: relative;
+  //top: 148px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(188% + 1.3px);
+    height: 149px;
+  }
+
+  .shape-fill {
+    fill: #ffff;
+  }
 `
 
 const Articles = styled.ol`
@@ -41,14 +64,7 @@ const Article = styled.li`
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
-`
-
-const AboutMe = styled.div`
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  background-color: #d1dce5;
-  gap: 30px;
+  background-color: #fff;
 `
 
 const IntroSubtitle = styled.h2`
@@ -87,48 +103,59 @@ const BlogIndex = ({ data, location }) => {
         />
       </Intro>
       <ArticlesContainer>
-        <h2>Discover my writing</h2>
-        <Articles style={{ listStyle: `none`, display: "flex" }}>
-          {posts.length > 0 &&
-            posts.slice(0, 2).map(post => {
-              const title = post.frontmatter.title || post.fields.slug
+        <Separator>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              className="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              className="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              className="shape-fill"
+            ></path>
+          </svg>
+        </Separator>
+        <ArticlesWrapper>
+          <h2>Discover my writing</h2>
+          <Articles style={{ listStyle: `none`, display: "flex" }}>
+            {posts.length > 0 &&
+              posts.slice(0, 2).map(post => {
+                const title = post.frontmatter.title || post.fields.slug
 
-              return (
-                <Article key={post.fields.slug}>
-                  <article itemScope itemType="http://schema.org/Article">
-                    <header>
-                      <h3 style={{ margin: "0px" }}>
-                        <Link to={post.fields.slug} itemProp="url">
-                          <span itemProp="headline">{title}</span>
-                        </Link>
-                      </h3>
-                      <small>{post.frontmatter.date}</small>
-                    </header>
-                    <section>
-                      <p>{post.frontmatter.description || post.excerpt}</p>
-                    </section>
-                  </article>
-                </Article>
-              )
-            })}
-        </Articles>
+                return (
+                  <Article key={post.fields.slug}>
+                    <article itemScope itemType="http://schema.org/Article">
+                      <header>
+                        <h3 style={{ margin: "0px" }}>
+                          <Link to={post.fields.slug} itemProp="url">
+                            <span itemProp="headline">{title}</span>
+                          </Link>
+                        </h3>
+                        <small>{post.frontmatter.date}</small>
+                      </header>
+                      <section>
+                        <p>{post.frontmatter.description || post.excerpt}</p>
+                      </section>
+                    </article>
+                  </Article>
+                )
+              })}
+          </Articles>
+
+          <footer>© {new Date().getFullYear()}, Illanor Music Blog</footer>
+        </ArticlesWrapper>
       </ArticlesContainer>
-
-      <AboutMe>
-        <StaticImage
-          //className="bio-avatar"
-          //layout="fixed"
-          formats={["auto", "webp", "avif"]}
-          src="../images/logo.png"
-          //width={50}
-          //height={50}
-          quality={95}
-          alt="Profile picture"
-        />
-        <h2>About Me</h2>
-      </AboutMe>
-
-      <footer>© {new Date().getFullYear()}, Illanor Music Blog</footer>
     </Layout>
   )
 }
